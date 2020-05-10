@@ -18,13 +18,14 @@ NAMED_WINDOW = 'HSV'
 
 HUE_LABELS = ['HUE MIN', 'HUE MAX', 'SAT MIN', 'SAT MAX', 'VALUE MIN', 'VALUE MAX']
 
+VIDEO_SOURCE = 1
 
 def empty_function(a):
     pass
 
 
 def detect_colors():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(VIDEO_SOURCE)
     cap.set(3, FRAME_WIDTH)
     cap.set(4, FRAME_HEIGHT)
 
